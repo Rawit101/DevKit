@@ -124,8 +124,8 @@ class _QuizScreenState extends State<QuizScreen> {
                     child: Card(
                       color: isSelected
                           ? (isCorrect
-                              ? Colors.green.withOpacity(0.2)
-                              : Colors.red.withOpacity(0.2))
+                              ? Colors.green.withValues(alpha: 0.2)
+                              : Colors.red.withValues(alpha: 0.2))
                           : null,
                       child: InkWell(
                         onTap: () => _selectAnswer(index),
@@ -218,10 +218,10 @@ class _QuizScreenState extends State<QuizScreen> {
                 height: 120,
                 decoration: BoxDecoration(
                   color: isExcellent
-                      ? Colors.green.withOpacity(0.2)
+                      ? Colors.green.withValues(alpha: 0.2)
                       : isGood
-                          ? Colors.orange.withOpacity(0.2)
-                          : Colors.red.withOpacity(0.2),
+                          ? Colors.orange.withValues(alpha: 0.2)
+                          : Colors.red.withValues(alpha: 0.2),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(

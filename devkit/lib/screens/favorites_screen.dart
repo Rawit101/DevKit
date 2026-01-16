@@ -127,7 +127,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
             Icon(
               Icons.bookmark_outline,
               size: 80,
-              color: theme.colorScheme.onSurface.withOpacity(0.3),
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.3),
             ),
             const SizedBox(height: 24),
             Text(
@@ -177,7 +177,7 @@ class _FavoriteCareerPathCard extends StatelessWidget {
                 width: 50,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: careerPath.color.withOpacity(0.2),
+                  color: careerPath.color.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Icon(

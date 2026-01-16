@@ -107,7 +107,7 @@ class AppTheme {
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: darkSurface,
         indicatorColor: darkCard,
-        labelTextStyle: MaterialStateProperty.all(
+        labelTextStyle: WidgetStateProperty.all(
           const TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w500,
@@ -134,7 +134,7 @@ class AppTheme {
       cardTheme: CardTheme(
         color: lightCard,
         elevation: 2,
-        shadowColor: Colors.black.withOpacity(0.1),
+        shadowColor: Colors.black.withValues(alpha: 0.1),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -205,7 +205,7 @@ class AppTheme {
       navigationBarTheme: NavigationBarThemeData(
         backgroundColor: lightSurface,
         indicatorColor: lightCard,
-        labelTextStyle: MaterialStateProperty.all(
+        labelTextStyle: WidgetStateProperty.all(
           const TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w500,

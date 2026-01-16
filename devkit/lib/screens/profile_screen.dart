@@ -34,7 +34,7 @@ class ProfileScreen extends StatelessWidget {
                         width: 100,
                         height: 100,
                         decoration: BoxDecoration(
-                          color: AppTheme.accentColor.withOpacity(0.2),
+                          color: AppTheme.accentColor.withValues(alpha: 0.2),
                           shape: BoxShape.circle,
                         ),
                         child: Icon(
@@ -135,7 +135,7 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(height: 24),
               // Motivational Message
               Card(
-                color: AppTheme.accentColor.withOpacity(0.1),
+                color: AppTheme.accentColor.withValues(alpha: 0.1),
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Row(
@@ -207,7 +207,7 @@ class _ProgressCard extends StatelessWidget {
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(
-                    color: careerPath.color.withOpacity(0.2),
+                    color: careerPath.color.withValues(alpha: 0.2),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(
