@@ -81,7 +81,7 @@ class _ProgrammingLanguageDetailScreenState
                                 vertical: 6,
                               ),
                               decoration: BoxDecoration(
-                                color: theme.colorScheme.primary.withOpacity(0.2),
+                                color: theme.colorScheme.primary.withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Text(
@@ -201,8 +201,8 @@ class _VideoResourceCard extends StatelessWidget {
                 height: 60,
                 decoration: BoxDecoration(
                   color: isDark
-                      ? Colors.white.withOpacity(0.1)
-                      : Colors.black.withOpacity(0.1),
+                      ? Colors.white.withValues(alpha: 0.1)
+                      : Colors.black.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(
@@ -230,8 +230,8 @@ class _VideoResourceCard extends StatelessWidget {
                       ),
                       decoration: BoxDecoration(
                         color: video.difficulty == 'Beginner'
-                            ? Colors.green.withOpacity(0.2)
-                            : Colors.orange.withOpacity(0.2),
+                            ? Colors.green.withValues(alpha: 0.2)
+                            : Colors.orange.withValues(alpha: 0.2),
                         borderRadius: BorderRadius.circular(6),
                       ),
                       child: Text(

@@ -115,8 +115,8 @@ class _RoadmapDetailScreenState extends State<RoadmapDetailScreen> {
                           value: _progress,
                           minHeight: 8,
                           backgroundColor: isDark
-                              ? Colors.white.withOpacity(0.1)
-                              : Colors.black.withOpacity(0.1),
+                              ? Colors.white.withValues(alpha: 0.1)
+                              : Colors.black.withValues(alpha: 0.1),
                           valueColor: AlwaysStoppedAnimation<Color>(
                             widget.careerPath.color,
                           ),
@@ -261,7 +261,7 @@ class _RoadmapStepWidget extends StatelessWidget {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: step.isCompleted ? color : color.withOpacity(0.2),
+                color: step.isCompleted ? color : color.withValues(alpha: 0.2),
                 shape: BoxShape.circle,
               ),
               child: step.isCompleted
@@ -284,7 +284,7 @@ class _RoadmapStepWidget extends StatelessWidget {
                 height: 60,
                 color: step.isCompleted
                     ? color
-                    : color.withOpacity(0.2),
+                    : color.withValues(alpha: 0.2),
               ),
           ],
         ),
@@ -322,7 +322,6 @@ class _RoadmapStepWidget extends StatelessWidget {
                       step.isCompleted
                           ? Icons.check_circle
                           : Icons.radio_button_unchecked,
-                      ),
                     ),
                   ),
                 ],
